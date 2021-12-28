@@ -1,0 +1,24 @@
+// addd mixing
+@use "../custom.scss" as *;
+@mixin gradient {
+  background: linear-gradient(
+    to right,
+    rgba($primary, 0.95),
+    rgba($pink, 0.95)
+  );
+}
+// ABSOLUTE CENTER
+
+@mixin AbsoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// transition
+
+@mixin Transitionprop {
+  transition-duration: 1000ms;
+  transition-property: all;
+}

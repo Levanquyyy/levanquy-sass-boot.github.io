@@ -1,0 +1,19 @@
+@use "./custom.scss";
+
+// input_components
+@use "components/animation";
+@use "components/buttons";
+@use "components/mixin";
+@use "components/typo";
+
+// imprt the section header
+
+@use "section/companies";
+@use "section/get-started";
+@use "section/intro-section";
+@use "section/navbar";
+@use "section/portfolio";
+@use "section/services";
+@use "section/testtimo";
+@use "section/faq.scss";
+@use "section/footer.scss";

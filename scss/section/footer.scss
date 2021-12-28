@@ -1,0 +1,95 @@
+@use "../custom.scss" as *;
+@use "../components/mixin" as *;
+.footer {
+  padding-top: 1rem 0;
+  background-color: black;
+}
+
+.contact-box {
+  position: relative;
+
+  &__icon {
+    width: 2rem;
+    stroke: $primary;
+    @include media-breakpoint-up(sm) {
+      width: 4rem;
+    }
+  }
+  &__info {
+    padding: 1rem;
+    &__title {
+      font-size: 1rem;
+      color: $white;
+      text-decoration: none;
+      @include media-breakpoint-up(sm) {
+        font-size: 1.4rem;
+      }
+    }
+    &__subtitle {
+      font-size: 0.8rem;
+      color: $gray-600;
+      text-decoration: none;
+      @include media-breakpoint-up(sm) {
+        font-size: 1remrem;
+      }
+    }
+  }
+}
+.footer-sm {
+  i {
+    color: white;
+    font-size: 1.8rem;
+    padding: 0 0.8rem;
+  }
+}
+
+// STYLE THE COMPANIES INFO CONTACT
+
+.companies-list {
+  display: block;
+  list-style-type: none;
+  position: relative;
+  li {
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+// style the copy INFO
+.footer-bottom {
+  background-color: $black;
+  &__copyright {
+    color: $gray-600;
+    font-weight: 400;
+    a {
+      color: $gray-300;
+      text-decoration: none;
+      &:hover {
+        color: $primary;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// style the back to stop the copy
+.back-to-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
+  i {
+    color: white;
+    font-size: 1rem;
+    @include AbsoluteCenter;
+  }
+}
